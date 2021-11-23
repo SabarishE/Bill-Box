@@ -1,0 +1,1097 @@
+/* ----font styles---- */
+
+@import url("https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Karantina&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Allerta+Stencil&family=Anton&family=Jua&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap");
+
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.header div {
+  height: 10vh;
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+
+  box-sizing: border-box;
+
+  background-color: rgb(123, 178, 250);
+}
+.header div .left {
+  font-size: 2rem;
+  font-family: "Luckiest Guy", cursive;
+  color: rgb(32, 32, 46);
+}
+.header div .left img {
+  margin: 0.5rem;
+  vertical-align: middle;
+  background-color: rgb(34, 34, 54);
+  padding: 0.2rem;
+  border-radius: 4px;
+}
+.header div .left img:hover {
+  box-shadow: 0 0 3px 6px rgb(34, 34, 54);
+  cursor: pointer;
+  transition: 0.4s;
+}
+.header div .left span {
+  border: 1px solid rgb(92, 92, 92);
+}
+
+.about {
+  height: 90vh;
+  text-align: left;
+  padding: 3rem;
+  margin-top: 10vh;
+  background-position: center;
+  background-size: cover;
+  box-sizing: border-box;
+}
+.about .heading {
+  font-size: 3rem;
+  color: rgb(123, 178, 250);
+  font-weight: bold;
+}
+.about .tag {
+  font-size: 2rem;
+  color: rgb(123, 178, 250);
+}
+.about .moto {
+  width: 90%;
+  font-size: 2rem;
+  padding: 3rem;
+  color: white;
+  font-family: "Luckiest Guy", cursive;
+}
+
+.about .moto button {
+  height: 2rem;
+  font-size: 1rem;
+  box-shadow: 0 0 3px 2px rgb(123, 178, 250);
+  background-color: rgb(34, 34, 54);
+  border: none;
+  color: white;
+  cursor: pointer;
+  margin-left: 1rem;
+}
+.about .moto span {
+  display: block;
+}
+
+.classification {
+  height: 93vh;
+  padding: 1rem 1rem;
+
+  background-color: rgb(123, 178, 250);
+  box-sizing: border-box;
+}
+.classification h2 {
+  font-family: "Luckiest Guy", cursive;
+  margin: 0;
+  color: rgb(51, 51, 71);
+}
+.classification div {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.classification .flowchart-img {
+  display: block;
+  max-height: 75vh;
+  margin-top: 1rem;
+  border-radius: 1rem;
+  box-shadow: 0 15px 10px 0 rgb(51, 51, 71);
+}
+
+.classification .summary ul li {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  font-size: 1.2rem;
+  margin: 0.2rem;
+}
+
+.classification .summary ul li img {
+  vertical-align: middle;
+  margin: 2px 5px 2px 2px;
+  width: 28px;
+  height: 28px;
+}
+
+/* -----screenshots starts------ */
+
+.screenshots {
+  height: 90vh;
+  padding: 2rem 1rem;
+
+  background-color: rgb(51, 51, 71);
+  box-sizing: border-box;
+}
+
+.screenshots h2 {
+  font-family: "Luckiest Guy", cursive;
+  margin: 0;
+  color: white;
+}
+
+.screenshots .flex-container {
+  display: flex;
+  justify-content: space-between;
+
+  flex-wrap: wrap;
+  width: 90%;
+  margin: 3rem auto 0 auto;
+}
+
+.screenshots .flex-container img {
+  display: block;
+  padding: 0.5rem;
+  width: 250px;
+  height: 350px;
+  box-shadow: 0 15px 10px 0 rgb(123, 178, 250);
+}
+
+/* -----screenshots ends------ */
+
+/* -------login page------- */
+
+.auth-page {
+  height: 90vh;
+  margin-top: 10vh;
+  padding-top: 4rem;
+  background-color: rgb(214, 219, 226);
+  background-repeat: repeat;
+  background-blend-mode: lighten;
+  box-sizing: border-box;
+}
+
+.auth-page .auth-page-container {
+  display: flex;
+  margin: auto;
+  width: 500px;
+  height: 55vh;
+  box-shadow: 0 0 8px 2px rgb(51, 51, 71);
+  box-sizing: border-box;
+}
+.auth-page-1 {
+  width: 50%;
+  background-color: rgb(51, 51, 71);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  box-sizing: border-box;
+  font-size: 1.5rem;
+  font-family: "Luckiest Guy", cursive;
+  color: white;
+}
+
+.auth-page-1 img {
+  width: 75px;
+  height: 75px;
+  display: block;
+  margin: 0 auto;
+}
+
+.auth-page-2 {
+  width: 50%;
+  padding: 0.5rem;
+}
+
+.auth-page-2 label,
+.auth-page-2 input,
+.auth-page-2 select {
+  color: rgb(51, 51, 71);
+  display: block;
+  text-align: left;
+  margin: 0.5rem;
+  font-weight: bold;
+}
+
+.auth-page-2 input,
+.auth-page-2 select {
+  height: 2.5rem;
+  background-color: rgb(51, 51, 71);
+  color: white;
+  border-radius: 3px;
+  border: none;
+  font-size: 1.2rem;
+  width: 80%;
+}
+
+.auth-page-2 input[type="submit"],
+.auth-page-2 button {
+  text-align: center;
+  background: transparent;
+  font-weight: bold;
+  color: rgb(51, 51, 71);
+  border: 1px solid rgb(51, 51, 71);
+  cursor: pointer;
+}
+
+.auth-page-2 input[type="submit"] {
+  width: 50%;
+}
+
+.auth-page-2 button {
+  display: block;
+  margin: 0.5rem;
+  text-decoration: none;
+  border-radius: 3px;
+  background-color: rgb(153, 193, 245);
+}
+
+.auth-page-2 input[type="submit"]:hover,
+.auth-page-2 button:hover {
+  box-shadow: 0 0 8px 2px rgb(51, 51, 71);
+  transition: 0.3s;
+}
+
+/* -------signup page------- */
+
+/* --------user-account page---------- */
+
+.account-page {
+  min-height: 100vh;
+  margin-top: 10vh;
+  background-color: rgb(214, 219, 226);
+  background-repeat: repeat;
+  background-blend-mode: lighten;
+}
+
+.account-page .nav-bar {
+  height: 7vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(51, 51, 71);
+}
+
+.account-page .nav-bar button {
+  height: 85%;
+  margin: 0 1rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 3px;
+  background-color: white;
+  cursor: pointer;
+  font-family: "Anton", sans-serif;
+}
+.account-page .nav-bar button:hover {
+  box-shadow: 0 0 2px 3px white;
+}
+
+.Dashboard button,
+.verify-btn {
+  width: 7rem;
+  height: 3rem;
+  font-size: 1.5rem;
+  background-color: rgb(51, 51, 71);
+  color: white;
+  border-radius: 4px;
+  border: none;
+}
+.Dashboard button:hover,
+.verify-btn:hover {
+  transform: scale(1.2, 1.2);
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.user-badge {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: rgb(34, 34, 54);
+  color: white;
+  width: 140px;
+  min-height: 2rem;
+  text-align: left;
+  padding: 0.25rem;
+  border-radius: 4px;
+  position: fixed;
+  top: 0.5rem;
+  right: 0.5rem;
+}
+.user-badge span {
+  display: flex;
+  align-items: center;
+}
+.user-badge button {
+  width: 100%;
+  margin-top: 1px;
+  background-color: white;
+  border: none;
+  font-weight: bold;
+}
+.user-badge img:hover {
+  box-shadow: 0 0 1px 3px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.login-btn {
+  background-color: rgb(34, 34, 54);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 1.2rem;
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  cursor: pointer;
+}
+.welcome-user {
+  font-family: "Luckiest Guy", cursive;
+}
+
+.popover {
+  width: 400px;
+  height: 150px;
+  z-index: 1;
+  padding-top: 2rem;
+  background-color: rgb(51, 51, 71);
+  box-shadow: 0 0 5px 5px rgb(51, 51, 71);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -75px;
+  margin-left: -200px;
+  box-sizing: border-box;
+}
+
+.popover button {
+  border-radius: 4px;
+  font-size: 1.5rem;
+  margin: 1rem;
+  border: none;
+  color: rgb(51, 51, 71);
+  background-color: white;
+}
+
+/* -------new entry starts------- */
+
+.newentry form {
+  width: 25rem;
+  display: block;
+  margin: 2rem auto;
+  padding: 0.5rem;
+  background-color: rgb(219, 231, 248);
+  box-shadow: 0 0 5px 5px rgb(51, 51, 71);
+}
+.updateentry form {
+  background-color: rgb(91, 91, 117);
+}
+
+.newentry form div {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem 0;
+}
+
+.newentry form div label {
+  font-size: 1rem;
+  text-align: left;
+  font-family: "Anton", sans-serif;
+}
+
+.newentry form input[type="submit"] {
+  background-color: rgb(51, 51, 71);
+  color: white;
+  border: none;
+  font-size: 1.5rem;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.newentry form input[type="submit"]:hover {
+  box-shadow: 0 0 5px 5px rgb(51, 51, 71);
+}
+
+.newentry form div input,
+.newentry form div textarea,
+.newentry form div select {
+  background-color: rgb(180, 207, 243);
+  color: rgb(51, 51, 71);
+  font-weight: bold;
+  border: none;
+  height: 2rem;
+  border-radius: 3px;
+  font-size: 1.2rem;
+}
+/* -------new entry ends------- */
+
+/* -------filter starts------- */
+
+.filter {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+  box-sizing: border-box;
+}
+.filter div {
+  height: 200px;
+}
+.filter .filter-options {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.filter .filter-options button {
+  height: 1.8rem;
+  font-size: 1.2rem;
+  box-sizing: border-box;
+  border: none;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: bold;
+  background-image: linear-gradient(90deg, rgb(51, 51, 71), rgb(123, 178, 250));
+  border-radius: 4px 0 0 4px;
+  color: white;
+}
+.filter .filter-options button:hover {
+  background-image: linear-gradient(
+    to right,
+    rgb(123, 178, 250),
+    rgb(51, 51, 71)
+  );
+  transition: 0.5s;
+  cursor: pointer;
+}
+.filter .filter-form {
+  width: 300px;
+  background-image: linear-gradient(
+    to right,
+    rgb(123, 178, 250),
+    rgb(51, 51, 71)
+  );
+  border-radius: 0 4px 4px 0;
+}
+
+.filter-form-flex {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.2rem;
+  color: white;
+  padding: 1rem;
+  text-align: left;
+}
+.filter-form-flex input,
+.filter-form-flex select {
+  height: 1.5rem;
+  border: none;
+  border-radius: 4px;
+}
+.filter-form-flex input[type="submit"] {
+  width: 50%;
+  height: 2rem;
+  margin: 0.5rem;
+  font-size: 1.2rem;
+  border-radius: 4px;
+  border: none;
+  background-image: linear-gradient(90deg, rgb(51, 51, 71), rgb(123, 178, 250));
+  border: 1px solid white;
+  cursor: pointer;
+}
+.filtered-data {
+  min-height: 60vh;
+  padding: 0.5rem;
+  margin: 1rem auto;
+}
+/* -------filter ends------- */
+
+/* -------your box starts------- */
+
+.history {
+  padding-top: 1.2rem;
+}
+
+.card {
+  display: flex;
+  width: 90%;
+  margin: 0.5rem auto;
+  box-sizing: border-box;
+}
+.card:hover {
+  box-shadow: 0 0 8px 2px rgb(51, 51, 71);
+}
+/* -----card-1 starts------ */
+.card-1 {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(51, 51, 71);
+  color: white;
+
+  padding: 0.2rem;
+  width: 10%;
+}
+.card-1 .month {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.card-1 .day {
+  font-size: 1.5rem;
+  width: 50%;
+  display: block;
+  margin: auto;
+  background-color: rgb(123, 178, 250);
+  color: rgb(51, 51, 71);
+  border-radius: 4px;
+}
+.card-1 .weekday {
+  font-size: 0.7rem;
+}
+.card-1 .year {
+  color: rgb(123, 178, 250);
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+/* -----card-1 ends------ */
+
+/* -----card-2 starts------ */
+
+.card-2 {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 0.2rem 0;
+  background-color: rgb(64, 64, 122);
+  color: rgb(123, 178, 250);
+  font-family: "Karantina", cursive;
+  font-size: 1.8rem;
+}
+.card-2-1 {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.card-2-1 span {
+  width: 50%;
+}
+.card-2-1 img {
+  background-color: rgb(123, 178, 250);
+  border-radius: 50%;
+  padding: 2px;
+  vertical-align: middle;
+  margin-right: 0.25rem;
+}
+
+/* -----card-2 ends------ */
+
+/* -----card-3 starts------ */
+.card-3 {
+  width: 35%;
+  display: flex;
+  text-align: left;
+
+  background-color: rgb(116, 116, 161);
+  color: white;
+}
+.card-3-1 {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 1rem;
+}
+.card-3-1 img {
+  vertical-align: baseline;
+  width: 40px;
+  height: 40px;
+}
+.card-3-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.card-3-2-1 {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.card-3-2-2 {
+  font-size: 0.8rem;
+}
+/* -----card-3 ends------ */
+
+/* -----card-4 starts------ */
+.card-4 {
+  background-color: rgb(151, 151, 211);
+  width: 15%;
+  font-size: 2rem;
+  padding: 1rem;
+  font-family: "Allerta Stencil", sans-serif;
+}
+.card-4 span {
+  font-size: 1.2rem;
+}
+
+/* -----card-4 ends------ */
+
+/* -------history ends------- */
+
+/* -------update entry starts----- */
+
+.selected-id {
+  width: 300px;
+  margin: 2rem auto;
+}
+.selected-id h4 {
+  margin: 0;
+}
+.selected-id input {
+  height: 1.5rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: white;
+  background-color: rgb(34, 34, 54);
+}
+.update-mapping {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  padding: 3rem 0.5rem;
+}
+.update-mapping div {
+  width: 150px;
+  padding: 0.5rem;
+  display: flex;
+  margin: 0.5rem;
+  flex-direction: column;
+  background-color: rgb(51, 51, 71);
+  border-radius: 8px;
+}
+
+.update-mapping div span {
+  border: 0.5px solid;
+  font-weight: bold;
+  background-color: rgb(123, 178, 250);
+}
+.update-mapping div span input {
+  max-width: 97.5%;
+  border: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+  height: 1.5rem;
+  background-color: rgb(34, 34, 54);
+  color: white;
+}
+
+.edit-btn,
+.delete-btn {
+  background-color: rgb(219, 158, 45);
+  border-radius: 3px;
+  color: white;
+  cursor: pointer;
+  border: 1px solid;
+}
+.delete-btn {
+  background-color: rgb(235, 66, 66);
+}
+
+.delete-block {
+  width: 280px;
+  margin: auto;
+  background-color: rgb(34, 34, 54);
+  color: white;
+  padding: 0.5rem;
+}
+.delete-block button {
+  background-color: black;
+  color: white;
+  border: none;
+}
+.delete-block div {
+  width: 50px;
+  height: 50px;
+  margin: auto;
+}
+.delete-block .del {
+  border: none;
+  border-radius: 3px;
+  background-color: rgb(235, 95, 95);
+  color: white;
+}
+/* -------popup design starts----- */
+
+.popup-card {
+  width: 250px;
+  height: 150px;
+  display: none;
+  background-color: rgb(180, 210, 248);
+  box-shadow: 0 0 100px 25px rgb(117, 117, 143);
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  padding: 0.5rem;
+  margin-top: -75px;
+  margin-left: -125px;
+  z-index: 10;
+  box-sizing: border-box;
+  border-radius: 5px;
+
+  animation: zoom-in-zoom-out 3s infinite;
+  font-weight: bold;
+}
+@keyframes zoom-in-zoom-out {
+  0% {
+    transform: scale(1, 1);
+  }
+  50% {
+    transform: scale(1.1, 1.1);
+    box-shadow: 0 0 20px 25px rgb(166, 166, 190);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
+}
+.popup-card button {
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 2px;
+  width: 100%;
+  cursor: pointer;
+}
+/* -------popup design starts----- */
+
+/* ------ Admin page ------ */
+
+.admin {
+  min-height: 100vh;
+  margin-top: 10vh;
+  background-color: rgb(96, 96, 121);
+}
+
+.admin h1 {
+  color: white;
+  font-family: "Anton", sans-serif;
+}
+.admin .admin-header {
+  height: 10vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0.5rem;
+  font-size: 1.2rem;
+  color: white;
+  box-shadow: 0 8px 10px -4px white;
+  box-sizing: border-box;
+  background-color: rgb(34, 34, 54);
+}
+.admin .admin-header img {
+  margin: 0.5rem;
+}
+
+.admin-content {
+  padding: 1rem;
+}
+.user-block {
+  height: 100px;
+  width: 300px;
+  border: 1px solid white;
+  padding: 0.25rem;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  box-shadow: 0 0 10px 2px white;
+  background-color: rgb(123, 178, 250);
+  color: rgb(34, 34, 54);
+}
+
+.user-block img {
+  padding: 0.25rem;
+  height: 100%;
+  background-color: white;
+  border-radius: 8px;
+  margin: 0;
+}
+.user-block .user-block-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 0.5rem;
+  font-size: 1.2rem;
+}
+.user-block .user-block-2 span {
+  box-sizing: border-box;
+  font-size: 0.9rem;
+  font-weight: bold;
+  text-align: left;
+}
+.admin-content .logs ul {
+  color: white;
+  list-style: none;
+}
+
+.logs {
+  background-color: rgb(208, 208, 211);
+  padding: 1rem;
+  margin: 0.5rem 0 3rem 0;
+}
+
+.logs ul,
+.logs h2 {
+  border-bottom: 2px dotted black;
+  padding-bottom: 0.25rem;
+}
+.logs h2,
+.logs ul li {
+  text-align: left;
+  font-family: "Source Code Pro", monospace;
+  color: black;
+}
+
+/* -----media query starts----- */
+@media screen and (max-width: 350px) {
+  .header div .left {
+    font-size: 1.5rem;
+  }
+  .header div .left img {
+    margin: 0.2rem;
+    vertical-align: middle;
+    background-color: rgb(34, 34, 54);
+    padding: 0.2rem;
+    border-radius: 4px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .screenshots .flex-container img {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 380px) {
+  .filter .filter-form {
+    width: 180px;
+  }
+  .filter .filter-options button {
+    height: 1.8rem;
+    font-size: 1rem;
+  }
+  .filter-form-flex {
+    padding: 0.75rem;
+  }
+}
+@media screen and (max-width: 400px) {
+  .classification .flowchart-img {
+    width: 250px;
+    height: 300px;
+  }
+  .about .moto {
+    padding: 1rem;
+    font-size: 1.5rem;
+  }
+  .screenshots .flex-container img {
+    margin: 0.5rem auto;
+  }
+
+  .account-page .nav-bar {
+    height: 8vh;
+    display: flex;
+  }
+}
+@media screen and (max-width: 480px) and (min-width: 380px) {
+  .filter .filter-form {
+    width: 200px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .newentry form {
+    width: 280px;
+    margin: 2rem auto;
+    padding: 0.25rem;
+  }
+
+  .newentry form div label {
+    font-size: 0.8rem;
+  }
+
+  .newentry form div input,
+  .newentry form div textarea,
+  .newentry form div select {
+    height: 1.5rem;
+    font-size: 1rem;
+  }
+  .account-page .nav-bar button {
+    height: 85%;
+    margin: 0 0.5rem;
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .card {
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 90%;
+    margin-bottom: 1.5rem;
+  }
+  .card-1 {
+    width: 25%;
+    margin: auto;
+  }
+  .card-2 {
+    width: 50%;
+    height: 3rem;
+    margin: auto;
+  }
+  .card-3 {
+    min-width: 75%;
+    margin: auto;
+    height: 3rem;
+    justify-content: space-evenly;
+  }
+  .card-4 {
+    min-width: 85%;
+    margin: auto;
+    padding: 0.5rem;
+  }
+}
+@media screen and (max-width: 530px) {
+  .auth-page .auth-page-container {
+    width: 95%;
+  }
+  .auth-page-1 {
+    font-size: 1.2rem;
+  }
+  .auth-page-2 input[type="submit"] {
+    width: 60%;
+  }
+}
+@media screen and (max-width: 550px) {
+  .screenshots {
+    height: 275vh;
+  }
+  .screenshots .flex-container {
+    padding: 0.5rem;
+  }
+  .screenshots .flex-container img {
+    display: block;
+    width: 75%;
+    margin: 0.5rem auto;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .classification .flowchart-img {
+    height: 60vh;
+    width: 90vw;
+    margin: 1rem 0;
+  }
+  .about .moto {
+    padding: 1rem;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .card {
+    width: 95%;
+  }
+
+  .card-1 {
+    padding: 0.5rem;
+  }
+  .card-1 .month {
+    font-size: 0.8rem;
+    font-weight: bold;
+  }
+  .card-1 .day {
+    font-size: 1.2rem;
+    width: 70%;
+  }
+  .card-1 .weekday {
+    font-size: 0.7rem;
+  }
+  .card-1 .year {
+    color: rgb(123, 178, 250);
+    font-weight: bold;
+    font-size: 1rem;
+  }
+  .card-2 {
+    font-size: 1.2rem;
+  }
+  .card-2-1 img {
+    margin-right: 2px;
+  }
+
+  .card-3-1 {
+    padding: 0.25rem 0.5rem;
+  }
+  .card-3-1 img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .card-3-2-1 {
+    font-size: 1rem;
+  }
+  .card-3-2-2 {
+    font-size: 0.6rem;
+  }
+
+  .card-4 {
+    background-color: rgb(151, 151, 211);
+    width: 15%;
+    font-size: 1.5rem;
+    padding: 1.2rem;
+    font-family: "Allerta Stencil", sans-serif;
+  }
+  .card-4 span {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .classification {
+    height: 160vh;
+  }
+
+  .classification div {
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 768px) and (min-width: 550px) {
+  .classification .flowchart-img {
+    height: 65vh;
+  }
+  .classification .summary ul li img {
+    width: 25px;
+    height: 25px;
+  }
+
+  .screenshots {
+    min-height: 140vh;
+  }
+  .screenshots .flex-container img {
+    width: 200px;
+    height: 300px;
+    margin: 0.5rem 0.5rem 1rem 0.5rem;
+  }
+}
+
+@media screen and (max-width: 1200px) and (min-width: 750px) {
+  .screenshots {
+    height: 110vh;
+  }
+  .screenshots .flex-container img {
+    width: 200px;
+    height: 300px;
+    margin-bottom: 2rem;
+  }
+}
